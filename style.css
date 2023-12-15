@@ -1,45 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Mulish', sans-serif;
 }
 
 body {
-    text-align: center;
-    display: grid;
-    background-color: lightblue;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f2f1; /* Light blue-gray background */
+    color: #333;
 }
 
 header {
-    text-align: left;
-    border: 1px solid black;
-    background-color: rgb(89, 164, 189);
-    border: 1px solid black;
+    background-color: #2196F3; /* Deep blue header */
+    color: #fff;
+    padding: 5px;
+}
+
+main {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 input {
-    border-width: 1px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f8ff; /* Light blue-gray input background */
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #2196F3; /* Deep blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0; /* Slightly darker blue on hover */
 }
 
 #weather-container {
-    padding: 5px;
-}
-
-#error-message {
-    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #bbdefb; /* Light blue background for weather info */
+    border-radius: 8px;
 }
 
 img {
-    width: 50px;
     height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
     visibility: hidden;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#error-message {
+    color: #d32f2f; /* Dark red for error messages */
 }
 
 footer {
     position: absolute;
-    width: 100vw;
     bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #2196F3; /* Deep blue footer */
+    color: #fff;
+    padding: 10px 0;
+    border-top: 2px solid #1565c0; /* Slightly darker blue border on top */
 }
+
