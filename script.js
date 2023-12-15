@@ -1,6 +1,6 @@
 // API keys
-const weatherApiKey = '074c0872ebdebc27ab230f233ff1679a';
-const timeApiKey = 'AmlynUsMejbtwFtmXWZ6dvEnsBkWmvpoKR-1EIWhPv0b5V-JPQQEG8hwhDyA7xf-';
+const weatherApiKey = ''; // Enter API Key 
+const timeApiKey = ''; // Enter API Key
 
 // Variables
 const form = document.querySelector("#form");
