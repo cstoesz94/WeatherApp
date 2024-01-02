@@ -3,7 +3,7 @@ const weatherApiKey = '074c0872ebdebc27ab230f233ff1679a'; // Enter API Key
 const timeApiKey = 'AmlynUsMejbtwFtmXWZ6dvEnsBkWmvpoKR-1EIWhPv0b5V-JPQQEG8hwhDyA7xf-'; // Enter API Key
 
 // Variables
-const form = document.querySelector("#form");
+const form = document.querySelector("form");
 const cityInput = document.querySelector("#cityInput");
 let errorMessage = document.querySelector("#error-message");
 let weatherContainer = document.querySelector("#weather-container");
@@ -27,9 +27,9 @@ async function checkWeather(city){
 // Display weather data for selected city.
 function displayWeather(data){
     document.querySelector("#city").innerHTML = data.name
-    document.querySelector("#temp").innerHTML = `Temperature: ${Math.round(data.main.temp)}°C`;
-    document.querySelector("#real-temp").innerHTML = `Feels like: ${Math.round(data.main.feels_like)}°C`;
-    document.querySelector("#wind").innerHTML = `Wind: ${Math.round(data.wind.speed)} km/h`;
+    document.querySelector("#temp").innerHTML = `${Math.round(data.main.temp)}°C`;
+    document.querySelector("#real-temp").innerHTML = `${Math.round(data.main.feels_like)}°C`;
+    document.querySelector("#wind").innerHTML = `${Math.round(data.wind.speed)} km/h`;
 }
 
 // Displays appropriate weather image depending on weather data for selected city.
@@ -67,7 +67,7 @@ async function checkTime(lat, long){
 // Display time data for selected lat/long coords.
 function displayTime(data){
     let time = new Date(data.resourceSets[0].resources[0].timeZone.convertedTime.localTime).toLocaleString();
-    document.querySelector("#time").innerHTML = `Date & Time: ${time}`;
+    document.querySelector("#time").innerHTML = time;
 }
 
 // Shows the error block if city is not found.

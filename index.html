@@ -9,14 +9,16 @@
 </head>
 <body>
     <header>
-        <h1>Weather App</h1>
+        <div id="inner-header">
+            <h1>Weather App</h1>
+            <form>
+                <label for="cityInput"></label>
+                <input type="text" id="cityInput" name="cityInput" placeholder="Enter a city">
+                <button type="submit">Search</button>
+            </form>
+        </div>
     </header>
     <main>
-        <form id="form">
-            <label for="cityInput">Enter a city name: </label>
-            <input type="text" id="cityInput" name="cityInput">
-            <button type="submit">Search</button>
-        </form>
         <div id="weather-container">
             <h1 id="city"></h1>
             <img id="weatherImg" src="" alt="image">

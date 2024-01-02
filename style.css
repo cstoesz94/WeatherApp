@@ -7,55 +7,57 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e0f2f1; /* Light blue-gray background */
-    color: #333;
-}
-
-header {
-    background-color: #2196F3; /* Deep blue header */
-    color: #fff;
-    padding: 5px;
-}
-
-main {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: lightskyblue;
 }
 
 form {
     display: flex;
-    flex-direction: column;
+    text-align: center;
     align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
-input {
-    padding: 8px;
+header {
+    background-color: #3498db;
+    width: 100%;
+}
+
+#inner-header {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px;
+}
+
+label {
+    display: block;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f0f8ff; /* Light blue-gray input background */
+    font-weight: bold;
 }
 
 button {
-    padding: 8px 15px;
-    background-color: #2196F3; /* Deep blue button */
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    color: #3498db;
+    padding: 5px;
     cursor: pointer;
 }
 
+input {
+    padding: 5px;
+    color: #3498db;
+}
+
 button:hover {
-    background-color: #1565c0; /* Slightly darker blue on hover */
+    opacity: 80%;
 }
 
 #weather-container {
     text-align: center;
-    padding: 20px;
-    background-color: #bbdefb; /* Light blue background for weather info */
-    border-radius: 8px;
 }
 
 img {
@@ -65,23 +67,18 @@ img {
     visibility: hidden;
 }
 
-h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
 #error-message {
-    color: #d32f2f; /* Dark red for error messages */
+    color: #e74c3c;
 }
 
 footer {
-    position: absolute;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    background-color: #2196F3; /* Deep blue footer */
-    color: #fff;
-    padding: 10px 0;
-    border-top: 2px solid #1565c0; /* Slightly darker blue border on top */
 }
+
 
